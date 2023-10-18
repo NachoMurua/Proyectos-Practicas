@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -10,6 +13,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: #240046;
+    padding: 25px;
 }
 
 .nombres {
@@ -17,18 +21,91 @@ nav {
     align-items: center;
 }
 
-.nombres h1 {
+.nombres h1, a{
     color: #ff8500;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 800;
 }
 
 .cohete{
     width: 50px;
     height: 50px;
+    margin-left: 15px;
 }
+
+.buscador {
+    padding: 6px;
+    border-radius: 50px;
+    width: 250px;
+}
+
+.section1Intro {
+    background: wheat;
+}
+
+.section1Intro{
+    text-align: center;
+    padding: 120px;
+}
+
+.section1Intro button {
+    margin-top: 60px;
+}
+
+.section2Cursos {
+    background: red;
+    text-align: center;
+}
+
+.cursos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 110px 0px 110px 0px;
+}
+
+.tarjeta {
+    border: 2px solid black;
+    background: blue;
+}
+
+.tarjeta img {
+    width: 220px;
+    height: 220px;
+}
+
+.section2Cursos button {
+    margin-bottom: 30px;
+}
+
+.section3Nosotros{
+    background-color: #bea9d1;
+}
+.divContainer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.biografia{
+    border: 2px solid black;
+}
+
+.biografia img {
+    width: 100px;
+    height: 100px;
+}
+
+
 
 section {
     background: #32065a;
 }
+
 
 footer {
     background: #240046;
