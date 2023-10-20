@@ -7,6 +7,7 @@
     font-family: 'Lato', sans-serif;
 }
 
+/* HEADER */
 
 nav {
     display: flex;
@@ -43,36 +44,39 @@ h1{
     width: 250px;
 }
 
-.section1Intro {
-    background: wheat;
-}
+/* SECTION 1 */
 
-.section1Intro{
+.section1Intro {
     text-align: center;
     padding: 120px;
+    background-image: url(../img/imgcodigo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
 }
 
-.section1Intro button {
-    margin-top: 60px;
+.section1Intro h2 {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 30px;
+    text-shadow: 0 0 5px #ffffff;
+    margin-bottom: 90px;
+    background-color: black;
+    border-radius: 40px;
+    opacity: 75%;
+    padding: 10px 0px;
 }
 
-button {
-    background-color: #32065a;
-    color: white;
-    margin-bottom: 30px;
-    width: 120px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 50px;
-    cursor: pointer;
+.btn1 {
+    background: black;
 }
+/* SECTION 2 */
 
 .section2Cursos {
     background: #1d0136;
     background-image: url(../img/fondovioleta.png);
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
     text-align: center;
 }
 
@@ -111,11 +115,10 @@ button {
 }
 
 .tarjeta img {
-    width: 220px;
-    height: 220px;
+    width: 240px;
+    height: 240px;
     border-radius: 20px 20px 0px 0px;
     margin-bottom: 16px;
-    border: 2px solid black;
     background-color: rgb(36, 35, 35);
 }
 
@@ -124,18 +127,20 @@ button {
     color: white;
 }
 
-.section2Cursos button {
+.btn2, .btn1 {
     margin-bottom: 30px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 8px;
     background: transparent;
     border: 2px solid #fcf3f3;
     transition: .5s ease;
     font-size: 15px;
     font-weight: 700;
+    color: white;
+    cursor: pointer;
 }
 
-.section2Cursos button:hover {
+.btn2:hover {
     background-color: #c77dff;
     border: 2px solid #982aec;
     text-shadow:0 0 5px #ffffff,
@@ -145,6 +150,8 @@ button {
                 0 0 10px #8400ff,
                 0 0 20px #8400ff;
 }
+
+/* SECTION 3 */
 
 .section3Nosotros{
     background-color: #bea9d1;
@@ -172,7 +179,6 @@ button {
 
 .biografia:nth-child(2) {
     padding: 10px;
-    margin-top: -30px; 
 }
 
 .biografia img {
@@ -186,6 +192,8 @@ button {
 section {
     background: #32065a;
 }
+
+/* FOOTER */
 
 footer {
     background: #c6bdcf;
