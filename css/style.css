@@ -56,38 +56,103 @@ h1{
     margin-top: 60px;
 }
 
+button {
+    background-color: #32065a;
+    color: white;
+    margin-bottom: 30px;
+    width: 120px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
 .section2Cursos {
-    background: red;
+    background: #1d0136;
+    background-image: url(../img/fondovioleta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
     text-align: center;
+}
+
+.cursosDestacados {
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    padding-top: 50px;
+    letter-spacing: 1px;
+    text-shadow:0 0 5px #f1f1f1;
 }
 
 .cursos {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 110px 0px 110px 0px;
+    padding: 90px 0px 100px 0px;
 }
 
 .tarjeta {
-    border: 2px solid black;
-    background: blue;
+    border: 1px solid #982aec;
+    border-radius: 20px;
+    background: transparent;
+    transition: transform .6s;
+    box-shadow: 0 0 5px #5a189a,
+                0 0 10px #5a189a,
+                0 0 20px #5a189a;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
+    transition: .6s ease;
+    box-shadow: 0 0 5px #9d4edd,
+                0 0 10px #9d4edd,
+                0 0 20px #9d4edd;
 }
 
 .tarjeta img {
     width: 220px;
     height: 220px;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 16px;
+    border: 2px solid black;
+    background-color: rgb(36, 35, 35);
+}
+
+.section2Cursos h3 {
+    padding-bottom: 18px;
+    color: white;
 }
 
 .section2Cursos button {
     margin-bottom: 30px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: transparent;
+    border: 2px solid #fcf3f3;
+    transition: .5s ease;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.section2Cursos button:hover {
+    background-color: #c77dff;
+    border: 2px solid #982aec;
+    text-shadow:0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #8400ff,
+                0 0 10px #8400ff,
+                0 0 20px #8400ff;
 }
 
 .section3Nosotros{
     background-color: #bea9d1;
 }
+
 .divContainer{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
 }
 
@@ -100,13 +165,63 @@ h1{
     height: 100px;
 }
 
+.biografia{
+    display: inline-block;
+    text-align: center;
+}
 
+.biografia:nth-child(2) {
+    padding: 10px;
+    margin-top: -30px; 
+}
+
+.biografia img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
 
 section {
     background: #32065a;
 }
 
-
 footer {
-    background: #240046;
+    background: #c6bdcf;
+}
+
+.divContainerFooter{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px,250px;
+    grid-template-areas:
+    "naxco cursos mapa"
+    "naxco cursos mapa"
+    "naxco cursos mapa";
+}
+.info{
+    grid-area: naxco;
+    margin: 0 auto;
+    margin: 10px;
+}
+.info img{
+    width: 45px;
+    height: 45px;
+    padding: 10px 5px;
+}
+
+.curso{
+    grid-area: cursos;
+    margin: 0 auto;
+}
+.curso ul li a{
+    color: #0c0c0c;
+    font-size: 20px;
+    padding: 10px;
+
+}
+.mapa{
+    grid-area: mapa;
+    margin: 0 auto;
 }
