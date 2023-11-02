@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* HEADER */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #240046 !important;
+    padding: 15px;
+    background-image: linear-gradient(to right,
+            #240046,
+            #430979,
+            #3c096c,
+            #28014d) !important;
+}
+
+.nombres {
+    display: flex;
+    align-items: center;
+}
+
+.nombres h1,
+a {
+    color: #ff8500;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px !important;
+
+}
+
+.cohete {
+    width: 50px;
+    height: 50px;
+    margin-left: 12px;
+    background: transparent;
+}
+
+.buscador {
+    outline: none;
+    padding: 6px;
+    border-radius: 50px;
+    width: 400px;
+    height: 45px;
+}
+
+.listaHeaderUl {
+    list-style: none;
+    display: flex;
+}
+
+.listaHeaderLi {
+    margin-inline: 4px;
+}
+
+.world {
+    width: 40px;
+    height: 40px;
+}
+
+#tamaño {
+    width: 60px;
+}
+
+.bn632-hover {
+    width: 100px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 12px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 10px;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+    outline: none;
+}
+
+.bn632-hover.bn24 {
+    background-image: linear-gradient(to right,
+            #6253e1,
+            #852d91,
+            #6253e1,
+            #9e00a3);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.grupo_input {
+    position: relative;
+}
+
+.grupo_input input {
+    width: 450px;
+    padding: 12px 0 12px 42px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #982aec;
+    font-size: 16px;
+}
+
+.grupo_input input::placeholder {
+    color: rgb(181, 188, 186);
+    font-size: 16px;
+}
+
+.grupo_input i {
+    position: absolute;
+    margin-left: 15px;
+    top: 10px;
+    font-size: 20px;
+    color: rgb(27, 32, 32);
+}
+
+/* SECTION 1 */
+
+.section1Intro {
+    padding: 120px;
+    background-image: url(../img/imgcodigo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.divTexto {
+    display: block;
+}
+
+.section1Intro h2 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 25px;
+    text-shadow: 0 0 5px #ffffff;
+    margin-bottom: 90px;
+    background-color: black;
+    padding-block: 10px;
+}
+
+/* SECTION 2 */
+
+.section2Cursos {
+    background: #1d0136;
+    background-image: url(../img/fondovioleta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.cursosDestacados {
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    padding-top: 50px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px #f1f1f1;
+}
+
+.cursos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 90px 0px 100px 0px;
+}
+
+.tarjeta {
+    border: 1px solid #982aec;
+    border-radius: 20px;
+    background: transparent;
+    transition: transform .6s;
+    box-shadow: 0 0 5px #5a189a,
+        0 0 10px #5a189a,
+        0 0 20px #5a189a;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
+    transition: .6s ease;
+    box-shadow: 0 0 5px #9d4edd,
+        0 0 10px #9d4edd,
+        0 0 20px #9d4edd;
+}
+
+.tarjeta img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 16px;
+    background-color: rgb(36, 35, 35);
+}
+
+.section2Cursos h3 {
+    padding-bottom: 18px;
+    color: white;
+}
+
+.btn2,
+.btn1 {
+    margin-bottom: 30px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: transparent;
+    border: 2px solid #fcf3f3;
+    transition: .5s ease;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #c77dff;
+    border: 2px solid #982aec;
+    text-shadow: 0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #ffffff;
+    box-shadow: 0 0 5px #8400ff,
+        0 0 10px #8400ff,
+        0 0 20px #8400ff;
+}
+
+/* SECTION 3 */
+
+.section3Nosotros {
+    background-color: #bea9d1;
+}
+
+.divContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.biografia {
+    border: 2px solid black;
+}
+
+.biografia img {
+    width: 100px;
+    height: 100px;
+}
+
+.biografia {
+    display: inline-block;
+    text-align: center;
+}
+
+.biografia:nth-child(2) {
+    padding: 10px;
+}
+
+.biografia img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+section {
+    background: #32065a;
+}
+
+/* FOOTER */
+
+.footerContainer {
+    background-color: #1d0136;
+    border: 1px solid #982aec;
+    transition: transform .6s;
+    box-shadow: 0 0 5px #5a189a,
+        0 0 10px #5a189a,
+        0 0 20px #5a189a;
+}
+
+.ContainerSponsor h2 {
+    display: block;
+    color: rgb(229, 229, 229);
+    font-size: 30px;
+    text-align: center;
+}
+
+.ContainerSponsor h2 span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+}
+
+.marcas {
+    text-align: center;
+    padding-block: 20px;
+}
+
+.marcas i {
+    font-size: 60px;
+    margin-inline: 8px;
+    color: #f1f1f1;
+}
+
+.gridContainer {
+    background-color: #1d0136;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "naxco curso mapa"
+    "naxco curso mapa"
+    ;
+}
+
+.titulo {
+    grid-area: naxco;
+    font-size: 25px;
+    margin: 15px;
+
+}
+
+.titulo h2 {
+    color: orange;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.titulo h2 span {
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+}
+
+.titulo a i {
+    font-size: 40px;
+    color: #452562;
+    margin: 5px;
+}
+
+.curso {
+    grid-area: curso;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.curso ul li a {
+    display: block;
+    color: orangered;
+    font-size: 20px;
+    padding-block: 5px;
+}
+
+.curso ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.mapa {
+    grid-area: mapa;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+.mapa iframe {
+    width: 450px;
+    height: 200px;
+}
