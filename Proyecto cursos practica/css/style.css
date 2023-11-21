@@ -26,23 +26,21 @@
     display: flex;
     align-items: center;
 }
-
-.nombres h1,
-a {
-    color: #ff8500;
-    text-decoration: none;
+.nombres h1{
+    color: orange;
+    font-size: 40px;
 }
 
-h1 {
-    font-size: 40px !important;
-
+.nombres h1 span{
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
 }
 
-.cohete {
-    width: 50px;
-    height: 50px;
-    margin-left: 12px;
-    background: transparent;
+.cohete{
+    width: 55px;
+    height: 55px;
+    margin-left: 15px;
 }
 
 .buscador {
@@ -90,7 +88,6 @@ h1 {
 
 .bn632-hover:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -216,8 +213,7 @@ h1 {
     color: white;
 }
 
-.btn2,
-.btn1 {
+.btn2, .btn1 {
     margin-bottom: 30px;
     padding: 12px 25px;
     border-radius: 8px;
@@ -243,10 +239,6 @@ h1 {
 
 /* SECTION 3 */
 
-.section3Nosotros {
-    background-color: #bea9d1;
-}
-
 .divContainer {
     display: flex;
     justify-content: space-around;
@@ -254,66 +246,99 @@ h1 {
 }
 
 .biografia {
+    margin-block: 80px;
     border: 2px solid black;
-}
-
-.biografia img {
-    width: 100px;
-    height: 100px;
-}
-
-.biografia {
+    width: 280px;
+    height: 400px;
     display: inline-block;
     text-align: center;
-}
-
-.biografia:nth-child(2) {
-    padding: 10px;
-}
-
-.biografia img {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: auto;
-    padding: 5px;
-}
-
-section {
-    background: #32065a;
-}
-
-/* FOOTER */
-
-.footerContainer {
-    background-color: #1d0136;
     border: 1px solid #982aec;
-    transition: transform .6s;
+    border-radius: 20px;
+    background: #2b0c47;
     box-shadow: 0 0 5px #5a189a,
         0 0 10px #5a189a,
         0 0 20px #5a189a;
 }
 
-.ContainerSponsor h2 {
-    display: block;
-    color: rgb(229, 229, 229);
-    font-size: 30px;
-    text-align: center;
+.biografia:hover, .biografiaCurso:hover {
+    transition: .6s ease;
+    box-shadow: 0 0 5px #9d4edd,
+        0 0 10px #9d4edd,
+        0 0 20px #9d4edd;
 }
 
-.ContainerSponsor h2 span {
+.biografiaCurso {
+    margin-bottom: 80px;
+    border: 2px solid black;
+    width: 280px;
+    height: 400px;
+    text-align: center;
+    border: 1px solid #982aec;
+    border-radius: 20px;
+    background: #2b0c47;
+    box-shadow: 0 0 5px #5a189a,
+        0 0 10px #5a189a,
+        0 0 20px #5a189a;
+}
+
+.imagenBiografia {
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+}
+
+.biografiaCurso p, .biografia p {
+    color: #ffffff;
+    margin: 5px;
+}
+
+.biografia h3 {
+    color: #ffff;
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+
+.containerSponsor, .section3Nosotros {
+    background-image: linear-gradient(to right,
+    #1d0038,
+    #310b55,
+    #340d58,
+    #190130) !important;
+}
+
+.containerSponsor {
+    border-block: 2px solid black;
+}
+
+.gridContainer {
+    background-image: linear-gradient(to right,
+    #240046,
+    #430979,
+    #3c096c,
+    #28014d) !important;
+}
+
+.containerSponsor h2 {
+    color: #ffff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.containerSponsor h2 span {
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
 }
 
 .marcas {
     text-align: center;
-    padding-block: 20px;
+    padding-block: 40px;
 }
 
 .marcas i {
-    font-size: 60px;
-    margin-inline: 8px;
+    font-size: 40px;
+    margin-inline: 50px;
     color: #f1f1f1;
 }
 
@@ -332,52 +357,64 @@ section {
     grid-area: naxco;
     font-size: 25px;
     margin: 15px;
-
 }
 
 .titulo h2 {
-    color: orange;
-    display: block;
-    margin-bottom: 20px;
-}
-
-.titulo h2 span {
-    color: white;
-    font-family: 'Cormorant Garamond', serif;
+    color: #faa307;
     font-size: 30px;
 }
 
+.titulo h2 span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    color: #ffff;
+}
+
 .titulo a i {
-    font-size: 40px;
-    color: #452562;
-    margin: 5px;
+    font-size: 30px;
+    margin: 10px;
+    color: #ffff;
+    transition: .4s ease;
+}
+
+.titulo a i:hover {
+    color: #faa307;
+}
+
+.copy {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 35px;
 }
 
 .curso {
     grid-area: curso;
-    padding: 10px;
-    margin: 0 auto;
+    padding-block: 20px;
 }
 
-.curso ul li a {
+.curso ul {
+    list-style: none;
+}
+
+.curso ul li a, ul {
     display: block;
-    color: orangered;
-    font-size: 20px;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 18px;
     padding-block: 5px;
+    transition: .4s ease;
 }
 
 .curso ul li a:hover {
-    color: white;
-    text-decoration: underline;
+    color: #faa307;
 }
 
 .mapa {
     grid-area: mapa;
-    margin: 5px auto;
-    padding: 10px;
+    padding: 15px;
 }
 
-.mapa iframe {
-    width: 450px;
-    height: 200px;
+iframe {
+    width: 350px;
+    height: 180px;
 }
